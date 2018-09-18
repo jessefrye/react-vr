@@ -2,4 +2,6 @@
 
 Testing out React VR
 
-`npm start` `npm bundle`
+[https://jesse-react-vr.surge.sh/](https://jesse-react-vr.surge.sh/)
+
+`npm start` `npm run bundle`
