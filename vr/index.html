@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
+      <script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.min.js'></script>
+
     <!-- <script src="./client.bundle?platform=vr"></script> -->
     <script src="./build/client.bundle.js"></script>
+    
     <script>
-      // Initialize the React VR application
+      new WebVRPolyfill();
       ReactVR.init(
-        // When you're ready to deploy your app, update this line to point to
-        // your compiled index.bundle.js
+        // ⇩ development ⇩
         // '../index.vr.bundle?platform=vr&dev=true',
+        // ⇩ production ⇩
         './build/index.bundle.js',
-        // Attach it to the body tag
         document.body
       );
     </script>

@@ -9,9 +9,8 @@ import UI from './components/UI';
 const Config = [
   {
     key: 0,
-    //photo from: https://hiveminer.com/User/scloopy
-    imageSrc: 'bm-temple.jpg',
-    buttonImageSrc: 'bm-temple.jpg'
+    imageSrc: 'living-room.vr.jpg',
+    buttonImageSrc: 'living-room.vr.jpg'
   },
   {
     key: 1,
@@ -41,7 +40,7 @@ export default class react_vr_ios extends React.Component {
     super();
 
     this.state = {
-      src: 'medieval-place.jpg'
+      src: 'living-room.vr.jpg'
     }
   }
 
